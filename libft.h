@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: plashkar <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: plashkar <plashkar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 19:05:26 by plashkar          #+#    #+#             */
-/*   Updated: 2023/07/20 17:35:13 by plashkar         ###   ########.fr       */
+/*   Updated: 2023/09/07 18:19:14 by plashkar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdarg.h>
+# include <fcntl.h>
+# include <stdio.h>
 
 //Part 1 - Libc functions
 
@@ -34,7 +36,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_memchr(const void*s, int c, size_t n);
 
-int		ft_atoi(const char *str);
+long	ft_atoi(const char *str);
 size_t	ft_strlen(const char *s);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
@@ -62,7 +64,7 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
-//Part 3 - printf functions 
+//Part 3 - printf functions
 
 int		ft_printchar(int c);
 int		ft_printnum(int c);
@@ -76,6 +78,16 @@ int		ft_print_ptr(unsigned long long ptr);
 
 int		digitcnt_base(unsigned int num, unsigned int base);
 void	put_number_base(unsigned int n, unsigned int base, char format);
+
+//Part 4 - get_next_line_bonus functions
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
+
+char	*get_next_line(int fd);
+char	*ft_strjoin_nl(char *line, char *buffer);
+int		ft_is_new_line(char *buffer);
 
 //Bonus part
 
