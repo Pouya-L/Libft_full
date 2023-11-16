@@ -42,5 +42,6 @@ make re
 #### To use it in your program
 By including `libft.h` in your header file, you enable the usage of this function in your main program.
 
-# [![forthebadge](https://forthebadge.com/images/badges/made-with-c.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/featured/featured-built-with-love.svg)](https://forthebadge.com) 
+[![forthebadge](https://forthebadge.com/images/badges/made-with-c.svg)](https://forthebadge.com) 
+[![forthebadge](https://forthebadge.com/images/featured/featured-built-with-love.svg)](https://forthebadge.com) 
 
