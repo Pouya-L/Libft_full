@@ -1,4 +1,4 @@
-# libft [![forthebadge](https://forthebadge.com/images/featured/featured-built-with-love.svg)](https://forthebadge.com)
+# libft
 
 ## Project Overview
 Libft is an individual project within the 42 curriculum, challenging students to recreate select standard C library functions. This endeavor aims to foster a profound understanding of data structures and basic algorithms. Notably, the 42 program restricts the use of certain standard libraries in projects, necessitating the continual expansion of this library with personally crafted functions as students progress. This involves the implementation of personalized versions of functions crucial for tasks such as string manipulation, memory allocation, and common operations in C programming.
@@ -41,4 +41,6 @@ make re
 ```
 #### To use it in your program
 By including `libft.h` in your header file, you enable the usage of this function in your main program.
+
+[![forthebadge](https://forthebadge.com/images/featured/featured-built-with-love.svg)](https://forthebadge.com) 
 
